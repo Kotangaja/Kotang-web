@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Bintang</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Bintang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <!-- Tombol Toggle Tema -->
+  <button id="theme-toggle">☀️ Light Mode</button>
+
+  <!-- Canvas Bintang -->
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- Foto -->
   <img src="Foto 2.jpg" alt="Foto Gue" class="profile-pic"/>
-  <body>
-    <body>
-  <div class="container">
-    <!-- semua isi web lo -->
-  </div>
-</body>
-    <dev class="main animate">
+
+  <div class="container animate">
     <h1>Halo! Nama gue Bintang</h1>
     <p>Umur gue 20 tahun</p>
+
     <div class="section">
-  <p class="section-title">Skill gue:</p>
-  <div class="card-container">
-    <div class="card">Barista/Late Art</div>
-    <div class="card">Mekanik</div>
-    <div class="card">Microsoft Office</div>
-  </div>
-</div>
+      <p class="section-title">Skill gue:</p>
+      <div class="card-container">
+        <div class="card">Barista / Latte Art</div>
+        <div class="card">Mekanik</div>
+        <div class="card">Microsoft Office</div>
+      </div>
+    </div>
+
     <div class="section">
-  <p class="section-title">Hobi gue:</p>
-    <div class="card-container">
-      <div class="card">🎬 Nonton Film</div>
-      <div class="card">🎧 Dengerin Musik</div> <div class="card">🚘 Otomotif</div>
-</div>
+      <p class="section-title">Hobi gue:</p>
+      <div class="card-container">
+        <div class="card">🎬 Nonton Film</div>
+        <div class="card">🎧 Dengerin Musik</div>
+        <div class="card">🚘 Otomotif</div>
+      </div>
+    </div>
+
     <p>Hubungi gue di:</p>
-<a href="https://instagram.com/bintangpranaja" target="_blank" class="btn">Instagram</a>
-<a href="https://wa.me/62895360479747" target="_blank" class="btn">WhatsApp</a>
-<div class="music-player">
-  <div class="music-info">
-    <p class="music-title">Lagu Favorit Gue</p>
-    <audio id="bgm" autoplay loop>
-      <source src="blowdown.mp3" type="audio/mpeg">
-      Browser kamu tidak mendukung audio.
-    </audio>
-    <div class="music-controls">
-  <button class="btn" onclick="document.getElementById('bgm').play()">▶️</button>
-  <button class="btn" onclick="document.getElementById('bgm').pause()">⏸️</button>
-</div>
+    <a href="https://instagram.com/bintangpranaja" target="_blank" class="btn">Instagram</a>
+    <a href="https://wa.me/62895360479747" target="_blank" class="btn">WhatsApp</a>
+
+    <div class="music-player">
+      <div class="music-info">
+        <p class="music-title">Lagu Favorit Gue</p>
+        <audio id="bgm" autoplay loop>
+          <source src="blowdown.mp3" type="audio/mpeg" />
+          Browser kamu tidak mendukung audio.
+        </audio>
+        <div class="music-controls">
+          <button class="btn" onclick="document.getElementById('bgm').play()">▶️</button>
+          <button class="btn" onclick="document.getElementById('bgm').pause()">⏸️</button>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  </body>
+
+  <script src="script.js"></script>
+</body>
 </html>
