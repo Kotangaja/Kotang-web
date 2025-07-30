@@ -149,7 +149,6 @@ body.light-mode .card {
   background-color: #f1f1f1;
   color: #333;
 }
-
 /* Tombol Mode */
 #theme-toggle {
   position: fixed;
@@ -180,3 +179,7 @@ body.light-mode .card {
   z-index: -1;
   pointer-events: none;
 }
+/* === Tambahan untuk light mode === */
+body.light-mode .music-player {
+  background-color: #f2f2f2;
+  color: #000000
