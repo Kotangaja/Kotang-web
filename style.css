@@ -131,3 +131,11 @@ ul {
   gap: 12px;
   margin-top: 8px;
 }
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+h1 {
+  font-size: 6vw; /* akan menyesuaikan lebar layar */
+}
