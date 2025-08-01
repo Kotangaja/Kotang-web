@@ -62,3 +62,27 @@ function animate() {
 }
 
 animate();
+document.getElementById('curhatForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const data = {
+    nama: document.getElementById('nama').value,
+    curhat: document.getElementById('curhat').value
+  };
+
+  fetch("https://script.google.com/macros/s/AKfycbwE2MuGVpvru6p8QGbfjle8MSh_tkVyGaCnqacrjLfRJdOeKLOo7P1SrmK91Lkie_Oc/exec", {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(res => res.text())
+  .then(response => {
+    document.getElementById('responseMsg').textContent = response;
+    document.getElementById('curhatForm').reset();
+  })
+  .catch(error => {
+    document.getElementById('responseMsg').textContent = "Gagal mengirim curhat. Coba lagi ya.";
+  });
+});
